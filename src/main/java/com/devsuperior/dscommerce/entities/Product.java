@@ -16,7 +16,7 @@ public class Product {
     private String name;
     @Column(columnDefinition = "TEXT")
     private String description;
-    private Double prince;
+    private Double price;
     private String imgUrl;
 
     @ManyToMany
@@ -31,11 +31,11 @@ public class Product {
     public Product() {
     }
 
-    public Product(Long id, String name, String description, Double prince, String imgUrl) {
+    public Product(Long id, String name, String description, Double price, String imgUrl) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.prince = prince;
+        this.price = price;
         this.imgUrl = imgUrl;
     }
 
@@ -63,12 +63,12 @@ public class Product {
         this.description = description;
     }
 
-    public Double getPrince() {
-        return prince;
+    public Double getPrice() {
+        return price;
     }
 
-    public void setPrince(Double prince) {
-        this.prince = prince;
+    public void setPrice(Double prince) {
+        this.price = price;
     }
 
     public String getImgUrl() {
